@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_main"
+        android:text="@string/registration_form"
+        android:textSize= "@dimen/text_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mp_medium" />
+
+    <TextView
+        android:id="@+id/title_username"
+        android:text="@string/username"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mp_medium"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginLeft="@dimen/mp_medium" />
+
+    <EditText
+        android:id="@+id/form_username"
+        android:inputType="text"
+        android:hint="@string/enter_your_username"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginEnd="@dimen/mp_medium" />
+
+    <TextView
+        android:id="@+id/title_password"
+        android:text="@string/password"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mp_medium"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginLeft="@dimen/mp_medium" />
+
+    <EditText
+        android:id="@+id/form_password"
+        android:inputType="textPassword"
+        android:hint="@string/enter_your_password"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginEnd="@dimen/mp_medium" />
+
+    <TextView
+        android:id="@+id/title_country"
+        android:text="@string/country"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mp_medium"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginLeft="@dimen/mp_medium" />
+
+    <EditText
+        android:id="@+id/form_country"
+        android:inputType="text"
+        android:hint="@string/enter_your_country"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginEnd="@dimen/mp_medium" />
+
+    <TextView
+        android:id="@+id/title_phone"
+        android:text="@string/phone_number"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mp_medium"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginLeft="@dimen/mp_medium" />
+
+    <EditText
+        android:id="@+id/form_phone"
+        android:inputType="phone"
+        android:hint="@string/enter_your_phone_number"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginEnd="@dimen/mp_medium" />
+
+    <TextView
+        android:id="@+id/title_sex"
+        android:text="@string/sex"
+        android:textSize= "@dimen/text_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mp_medium"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginLeft="@dimen/mp_medium" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginEnd="@dimen/mp_medium" >
+        <RadioButton
+            android:id="@+id/form_sex_male"
+            android:text="@string/male"
+            android:textSize= "@dimen/text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/form_sex_female"
+            android:text="@string/female"
+            android:textSize= "@dimen/text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_medium"
+        android:layout_marginTop="@dimen/mp_large"
+        android:layout_marginStart="@dimen/mp_medium"
+        android:layout_marginLeft="@dimen/mp_medium"
+        android:layout_marginRight="@dimen/mp_medium"
+        android:layout_marginEnd="@dimen/mp_medium" />
+
+</LinearLayout>
